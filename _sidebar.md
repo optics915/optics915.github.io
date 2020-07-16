@@ -1,5 +1,9 @@
 
-* [新式复现](./docs/a-1新式复现.md)
+* 新式复现
+  * [a-1_docsify-blog的搭建过程](./docs/a-1_docsify-blog的搭建过程.md)
+  * [a-2_mac终端安装brew](./docs/a-2_mac终端安装brew.md)
+  * [a-3_解决服务器在国外访问缓慢问题](./docs/a-3_解决服务器在国外访问缓慢问题.md)
+<!-- [新式复现](./docs/a-1新式复现.md) -->
   
 * Java
 

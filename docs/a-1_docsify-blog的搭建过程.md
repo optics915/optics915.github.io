@@ -1,9 +1,3 @@
-------
-
-
-
-# 一 新式复现
-
 > 作者：optics915。
 >
 > **介绍:** 这是一个随手化的类似笔记的个人博客 作者: **[optics915](https://optics915.gitee.io/docsify-blog)** 。一般会在此记录一些从知乎、B站、GitHub上学来的有意思的操作，每一个过程都先自己操作成功之后再将其记录下来，以方便日后碰到相似类型时有理可依。
@@ -71,7 +65,6 @@ Listening at http://localhost:3000
 
 #### 1.1.6 博客内容填充以及侧边栏、搜索栏
 这里详情请参考Guide哥的视频以及他GitHub上所用到的资源，资源使用链接:https://github.com/Snailclimb/docsify-demo
-
 ### 1.2 将项目上传至GitHub
 #### 1.2.1 终端上传该项目至GitHub
 ##### 1.2.1.1 在GitHub上新建一个仓库
@@ -124,153 +117,79 @@ root:docsify-blog ZouYue$
 ![](https://s1.ax1x.com/2020/07/13/UYW0ln.png)
 
 至此，在GitHub上部署成功，以后我们就可以通过https://optics915.github.io/docsify-blog 这个域名来访问这样一个博客。
+
 ### 1.3 将项目上传至Gitee
-Guide哥在视频里建议那些因为GitHub访问比较慢的小伙伴，将项目上传至国内的托管平台Gitee，基本操作差不多，在终端上传项目至Gitee，只需要把`git remote add origin https://github.com/optics915/docsify-blog.git`里面的`github`改成`gitee`即可，后面我有在第二次提交时出现问题处有提及，Guide哥在这儿采用了另一种直接通过GitHub导入至Gitee的方法，过程如下：
-##### 1.3.1 从GitHub导入仓库
+
+Guide哥在视频里建议那些因为GitHub访问比较慢的小伙伴，这里可以访问下面`3 解决服务器在国外访问缓慢问题`，将项目上传至国内的托管平台Gitee，基本操作差不多，在终端上传项目至Gitee，只需要把`git remote add origin https://github.com/optics915/docsify-blog.git`里面的`github`改成`gitee`即可，后面我有在第二次提交时出现问题处有提及，Guide哥在这儿采用了另一种直接通过GitHub导入至Gitee的方法，过程如下：
+
+#### 1.3.1 从GitHub导入仓库
 ![](https://s1.ax1x.com/2020/07/13/UYWByq.png)
-##### 1.3.2 从GitHub中项目主页导入地址
+
+#### 1.3.2 从GitHub中项目主页导入地址
 ![](https://s1.ax1x.com/2020/07/13/UYWsmV.png)
-##### 1.3.3 导入仓库
+
+#### 1.3.3 导入仓库
 ![](https://s1.ax1x.com/2020/07/13/UYWDO0.png)
-##### 1.3.4 从Gitee项目主页的服务里选择Gitee Pages
+
+#### 1.3.4 从Gitee项目主页的服务里选择Gitee Pages
 ![](https://s1.ax1x.com/2020/07/13/UYWywT.png)
-##### 1.3.5 生成域名
+
+#### 1.3.5 生成域名
 ![](https://s1.ax1x.com/2020/07/13/UYWgkF.png)
 ![](https://s1.ax1x.com/2020/07/13/UYW6TU.png)
 
 ### 1.4 将新增内容后的项目再次更新至GitHub与Gitee
-##### 1.4.1 更新至GitHub
+
+#### 1.4.1 更新至GitHub
+
 经操作发现更新至GitHub比较简单，只需要简单的几个命令行，把项目上传至GitHub即可，通过原有的域名即可看到更新后的博客，命令行如下：
 ```
+root:~ ZouYue$ cd /Users/macos/docsify-blog 
 root:docsify-blog ZouYue$ git init
 重新初始化已存在的 Git 仓库于 /Users/macos/docsify-blog/.git/
 root:docsify-blog ZouYue$ git add .
-root:docsify-blog ZouYue$ git commit -m "third commit"
+root:docsify-blog ZouYue$ git commit -m "forth commit"
 位于分支 master
+您的分支与上游分支 'origin/master' 一致。
+
 无文件要提交，干净的工作区
 root:docsify-blog ZouYue$ git remote add origin https://github.com/optics915/docsify-blog.git
+fatal: 远程 origin 已经存在。
+root:docsify-blog ZouYue$ git remote rm origin
+root:docsify-blog ZouYue$ git remote add origin https://github.com/optics915/y
 root:docsify-blog ZouYue$ git push -u origin master
-枚举对象: 7, 完成.
-对象计数中: 100% (7/7), 完成.
-使用 4 个线程进行压缩
-压缩对象中: 100% (4/4), 完成.
-写入对象中: 100% (4/4), 1.80 KiB | 1.80 MiB/s, 完成.
-总共 4（差异 3），复用 0（差异 0），包复用 0
-remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
-To https://github.com/optics915/docsify-blog.git
-   6a823b2..1fca346  master -> master
 分支 'master' 设置为跟踪来自 'origin' 的远程分支 'master'。
+Everything up-to-date
 root:docsify-blog ZouYue$ 
+
 ```
-##### 1.4.2 更新至Gitee
-但是在更新至Gitee时出现了一些问题2
-
-再将该项目再次上传至码云时发生了两个错误:1、`fatal: 远程 origin 已经存在。`;2、`提示：更新被拒绝，因为远程仓库包含您本地尚不存在的提交。这通常是因为另外
-提示：一个仓库已向该引用进行了推送。再次推送前，您可能需要先整合远程变更`
-解决:1、`git remote rm origin`参考:https://www.cnblogs.com/LQ970811/p/12174743.html;2、`git push -u origin +master`,参考:https://blog.csdn.net/qq_23100787/article/details/77529762?utm_medium=distribute.pc_relevant_t0.none-task-blog-BlogCommendFromMachineLearnPai2-1.compare&depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-BlogCommendFromMachineLearnPai2-1.compare详情见下图：
-## 2 mac终端安装brew
-我记得当时尝试了好几个别人分享的方法，但是好像都或多或少在安装的过程中有一些错误而导致无法成功安装，下面记录了安装的每一个过程：
+以下错误是我在另一个项目中遇到的问题，如果出现以下错误，那么再输入`git push -u origin +master`
 ```
-ZouYue:~ macos$ /bin/zsh -c "$(curl -fsSL https://gitee.com/cunkai/HomebrewCN/raw/master/Homebrew.sh)"
-
-              开始执行Brew自动安装程序
-             [cunkai.wang@foxmail.com]
-           [2020-05-24 10:28:39][10.15]
-       https://zhuanlan.zhihu.com/p/111014448
-
-
-请选择一个下载镜像，例如中科大，输入1回车。
-源有时候不稳定，如果git克隆报错重新运行脚本选择源。cask非必须，有部分人需要。
-1、中科大下载源 2、清华大学下载源 3、腾讯下载源(不稳定) 4、阿里巴巴下载源(缺少cask源)
-请输入序号: 1
-
-  你选择了中国科学技术大学下载源
-
-此脚本将要删除之前的brew(包括它下载的软件)，请自行备份。
-->是否现在开始执行脚本（N/Y）y
-
---> 脚本开始执行
-==> 通过命令删除之前的brew、创建一个新的Homebrew文件夹
-(设置开机密码：在左上角苹果图标->系统偏好设置->"用户与群组"->更改密码)
-(如果提示This incident will be reported. 在"用户与群组"中查看是否管理员)
-请输入开机密码，输入过程不显示，输入完后回车
-Password:
--> 创建文件夹 /usr/local/Homebrew
-此步骤成功
--> 创建文件夹 /usr/local/Caskroom
-此步骤成功
--> 创建文件夹 /usr/local/Cellar
-此步骤成功
--> 创建文件夹 /usr/local/var/homebrew
-此步骤成功
--> 创建文件夹 /usr/local/var/homebrew/linked
-此步骤成功
-git version 2.24.2 (Apple Git-127)
-
-下载速度觉得慢可以ctrl+c或control+c重新运行脚本选择下载源
-==> 克隆Homebrew基本文件(32M+)
-
-未发现Git代理（属于正常状态）
-Cloning into '/usr/local/Homebrew'...
-remote: Enumerating objects: 137503, done.
-remote: Total 137503 (delta 0), reused 0 (delta 0)
-Receiving objects: 100% (137503/137503), 33.52 MiB | 1.64 MiB/s, done.
-Resolving deltas: 100% (101380/101380), done.
-此步骤成功
-==> 创建brew的替身
-此步骤成功
-==> 克隆Homebrew Core(224M+) 
-此处如果显示Password表示需要再次输入开机密码，输入完后回车
-Cloning into '/usr/local/Homebrew/Library/Taps/homebrew/homebrew-core'...
-remote: Enumerating objects: 724426, done.
-remote: Total 724426 (delta 0), reused 0 (delta 0)B | 8.19 MiB/s 
-Receiving objects: 100% (724426/724426), 234.68 MiB | 2.03 MiB/s, done.
-Resolving deltas: 100% (481993/481993), done.
-此步骤成功
-==> 克隆Homebrew Cask(248M+) 类似AppStore 
-此处如果显示Password表示需要再次输入开机密码，输入完后回车
-Cloning into '/usr/local/Homebrew/Library/Taps/homebrew/homebrew-cask'...
-remote: Enumerating objects: 440570, done.
-remote: Total 440570 (delta 0), reused 0 (delta 0)
-Receiving objects: 100% (440570/440570), 267.45 MiB | 2.21 MiB/s, done.
-Resolving deltas: 100% (314892/314892), done.
-此步骤成功
-==> 配置国内镜像源HOMEBREW BOTTLE
-此步骤成功
-/Users/macos/.bash_profile:1: no such file or directory: 6/bin:.
-Could not find platform independent libraries <prefix>
-Could not find platform dependent libraries <exec_prefix>
-Consider setting $PYTHONHOME to <prefix>[:<exec_prefix>]
-Fatal Python error: initfsencoding: unable to load the file system codec
-ModuleNotFoundError: No module named 'encodings'
-
-Current thread 0x000000010de51d40 (most recent call first):
-
-==> 安装完成，brew版本
-
-10.15
-brew -v
-
-Homebrew 2.2.17-96-g2e801c3-dirty
-Homebrew/homebrew-core (git revision bce4b; last commit 2020-05-24)
-Homebrew/homebrew-cask (git revision ca81bd; last commit 2020-05-23)
-Brew前期配置成功
-
-==> brew update
-
-Already up-to-date.
-
-        上一句如果提示Already up-to-date表示成功
-            Brew自动安装程序运行完成
-              国内地址已经配置完成
-
-                初步介绍几个brew命令
-
-        本地软件库列表：brew ls
-        查找软件：brew search google（其中google替换为要查找的软件关键字）
-        查看brew版本：brew -v  更新brew版本：brew update
-
-现在可以输入命令open ~/.zshrc -e 或者 open ~/.bash_profile -e 整理一下重复的语句(运行 echo $SHELL 可以查看应该打开那一个文件修改)
+ ! [rejected]        master -> master (fetch first)
+error: 推送一些引用到 'https://github.com/optics915/MyBlog.git' 失败
+提示：更新被拒绝，因为远程仓库包含您本地尚不存在的提交。这通常是因为另外
+提示：一个仓库已向该引用进行了推送。再次推送前，您可能需要先整合远程变更
+提示：（如 'git pull ...'）。
+提示：详见 'git push --help' 中的 'Note about fast-forwards' 小节。
 ```
-参考：https://www.zhihu.com/question/35928898
+#### 1.4.2 更新至Gitee
+但是在更新至Gitee时出现了一个问题，就是我用相同的方法将更新后的内容成功提交至gitee之后，无法向GitHub那样在网站地址自动更新HTML，无论是暂停、更新，还是重新新建项目从终端上传项目，不知道问题出在哪儿。
+
+##### 1.4.2.1 更新至Gitee遇到的问题
+此前将该项目再次上传至码云时发生了两个错误:
+
+1、`fatal: 远程 origin 已经存在。`
+
+2、
+```
+提示：更新被拒绝，因为远程仓库包含您本地尚不存在的提交。这通常是因为另外
+提示：一个仓库已向该引用进行了推送。再次推送前，您可能需要先整合远
+```
+解决:
+
+1、显示origin 已经存在，那我们只需要将origin删除，即命令`git remote rm origin`参考:https://www.cnblogs.com/LQ970811/p/12174743.html;
+
+2、显示更新被拒绝，说明无法提交，按照后面这个链接的说法，我们进行强制提交，`origin +master`,完整命令：`git push -u origin +master`,参考:https://blog.csdn.net/qq_23100787/article/details/77529762?utm_medium=distribute.pc_relevant_t0.none-task-blog-BlogCommendFromMachineLearnPai2-1.compare&depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-BlogCommendFromMachineLearnPai2-1.compare
+
+
 
