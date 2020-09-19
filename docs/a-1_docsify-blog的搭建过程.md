@@ -156,7 +156,7 @@ root:docsify-blog ZouYue$ git commit -m "forth commit"
 root:docsify-blog ZouYue$ git remote add origin https://github.com/optics915/docsify-blog.git
 fatal: 远程 origin 已经存在。
 root:docsify-blog ZouYue$ git remote rm origin
-root:docsify-blog ZouYue$ git remote add origin https://github.com/optics915/y
+root:docsify-blog ZouYue$ git remote add origin https://github.com/optics915/docsify-blog.git
 root:docsify-blog ZouYue$ git push -u origin master
 分支 'master' 设置为跟踪来自 'origin' 的远程分支 'master'。
 Everything up-to-date
