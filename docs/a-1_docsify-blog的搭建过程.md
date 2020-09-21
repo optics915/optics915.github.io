@@ -199,6 +199,41 @@ error: 推送一些引用到 'https://github.com/optics915/MyBlog.git' 失败
 提示：（如 'git pull ...'）。
 提示：详见 'git push --help' 中的 'Note about fast-forwards' 小节。
 ```
+如下所示：
+```
+root:docsify-blog ZouYue$ git init
+重新初始化已存在的 Git 仓库于 /Users/macos/docsify-blog/.git/
+root:docsify-blog ZouYue$ git add .
+root:docsify-blog ZouYue$ git commit -m 'first commit'
+位于分支 master
+您的分支与上游分支 'origin/master' 一致。
+
+无文件要提交，干净的工作区
+root:docsify-blog ZouYue$ git remote add origin https://github.com/optics915/docsify-blog.git
+fatal: 远程 origin 已经存在。
+root:docsify-blog ZouYue$ git remote rm origin
+root:docsify-blog ZouYue$ git remote add origin https://github.com/optics915/docsify-blog.git
+root:docsify-blog ZouYue$ git push -u origin master
+To https://github.com/optics915/docsify-blog.git
+ ! [rejected]        master -> master (fetch first)
+error: 推送一些引用到 'https://github.com/optics915/docsify-blog.git' 失败
+提示：更新被拒绝，因为远程仓库包含您本地尚不存在的提交。这通常是因为另外
+提示：一个仓库已向该引用进行了推送。再次推送前，您可能需要先整合远程变更
+提示：（如 'git pull ...'）。
+提示：详见 'git push --help' 中的 'Note about fast-forwards' 小节。
+root:docsify-blog ZouYue$ git push -u origin +master
+枚举对象: 81, 完成.
+对象计数中: 100% (81/81), 完成.
+使用 4 个线程进行压缩
+压缩对象中: 100% (80/80), 完成.
+写入对象中: 100% (81/81), 154.64 KiB | 6.44 MiB/s, 完成.
+总共 81（差异 41），复用 0（差异 0），包复用 0
+remote: Resolving deltas: 100% (41/41), done.
+To https://github.com/optics915/docsify-blog.git
+ + 9c9a94e...7820bd4 master -> master (forced update)
+分支 'master' 设置为跟踪来自 'origin' 的远程分支 'master'。
+root:docsify-blog ZouYue$ 
+```
 #### 1.4.2 更新至Gitee
 但是在更新至Gitee时出现了一个问题，就是我用相同的方法将更新后的内容成功提交至gitee之后，无法向GitHub那样在网站地址自动更新HTML，无论是暂停、更新，还是重新新建项目从终端上传项目，不知道问题出在哪儿。
 
