@@ -163,6 +163,33 @@ Everything up-to-date
 root:docsify-blog ZouYue$ 
 
 ```
+或者这个提交成功
+```
+root:docsify-blog ZouYue$ git init
+重新初始化已存在的 Git 仓库于 /Users/macos/docsify-blog/.git/
+root:docsify-blog ZouYue$ git add .
+root:docsify-blog ZouYue$ git commit -m 'fifth commit'
+位于分支 master
+无文件要提交，干净的工作区
+root:docsify-blog ZouYue$ git remote add origin https://github.com/optics915/docsify-blog.git
+fatal: 远程 origin 已经存在。
+root:docsify-blog ZouYue$ git remote rm origin
+root:docsify-blog ZouYue$ git remote add origin https://github.com/optics915/docsify-blog.git
+root:docsify-blog ZouYue$ git push -u origin master
+Username for 'https://github.com': optics915
+Password for 'https://optics915@github.com': 
+枚举对象: 19, 完成.
+对象计数中: 100% (19/19), 完成.
+使用 4 个线程进行压缩
+压缩对象中: 100% (12/12), 完成.
+写入对象中: 100% (12/12), 4.47 KiB | 4.47 MiB/s, 完成.
+总共 12（差异 8），复用 0（差异 0），包复用 0
+remote: Resolving deltas: 100% (8/8), completed with 7 local objects.
+To https://github.com/optics915/docsify-blog.git
+   5a5123b..b1ff101  master -> master
+分支 'master' 设置为跟踪来自 'origin' 的远程分支 'master'。
+root:docsify-blog ZouYue$ 
+```
 以下错误是我在另一个项目中遇到的问题，如果出现以下错误，那么再输入`git push -u origin +master`
 ```
  ! [rejected]        master -> master (fetch first)
