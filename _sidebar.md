@@ -1,9 +1,11 @@
-
+* 如何使用docsify
+  * [how-to-use-docsify](./docs/how-to-use-docsify.md)
 * 新式复现
   * [a-1_docsify-blog的搭建过程](./docs/a-1_docsify-blog的搭建过程.md)
   * [a-2_mac终端安装brew](./docs/a-2_mac终端安装brew.md)
   * [a-3_解决服务器在国外访问缓慢问题](./docs/a-3_解决服务器在国外访问缓慢问题.md)
-  * [a-4_将pycharm里面的项目上传至GitHub或者Gitee](./docs/a-4_解决服务器在国外访问缓慢问题.md)
+  * [a-4_将pycharm里面的项目上传至GitHub或者Gitee](./docs/a-4_将pycharm里面的项目上传至GitHub或者Gitee.md)
+  * [a-5_IntelliJ全家桶破解办法](./docs/a-5_IntelliJ全家桶破解办法.md)
 <!-- [新式复现](./docs/a-1新式复现.md) -->
   
 * Java

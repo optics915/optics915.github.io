@@ -1,3 +1,9 @@
+> 作者：optics915。
+>
+> **介绍:** 这是一个随手化的类似笔记的个人博客 作者: **[optics915](https://optics915.gitee.io/docsify-blog)** 。一般会在此记录一些从知乎、B站、GitHub上学来的有意思的操作，每一个过程都先自己操作成功之后再将其记录下来，以方便日后碰到相似类型时有理可依。
+
+以下摘自Guide哥关于如何使用docsify的教程，如果对我前面的介绍还比较模糊，那就参考一下Guide哥的说明，很详细，我也基本按照他的介绍来操作的。
+
 还记得我在上周发的[《V2.0 版本的 JavaGuide 面试突击版来啦！带着它的在线阅读版本来啦！》](https://mp.weixin.qq.com/s?__biz=Mzg2OTA0Njk0OA==&mid=2247486494&idx=1&sn=a17e8278bd9fc1354449f925ef990c25&chksm=cea243d5f9d5cac3b0b3b55769e162363256eb7fa483997c21b62cddb4ef2d583a2bcae0ac1a&token=1910196174&lang=zh_CN#rd)这篇文章中答应手把手教大家搭建一下下面一样的文档类型网站不？
 
 

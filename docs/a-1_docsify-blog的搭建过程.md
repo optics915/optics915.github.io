@@ -63,7 +63,13 @@ Listening at http://localhost:3000
 ```
 重复操作多次，果然问题是在`docsify init ./`，希望这里能够引起初学者注意，不然辛苦编辑的内容，就这么没了，还是不划算的。
 
-#### 1.1.6 博客内容填充以及侧边栏、搜索栏
+#### 1.1.6 使用vscode打开文件
+在编辑docsify博客时，使用vscode来编辑挺方便的，那么怎么在终端打开呢？主要有以下三个步骤：
+![](https://s1.ax1x.com/2020/09/21/wb5yfU.png)
+![](https://s1.ax1x.com/2020/09/21/wb5BT0.png)
+![](https://s1.ax1x.com/2020/09/21/wb526J.png)
+
+#### 1.1.7 博客内容填充以及侧边栏、搜索栏
 这里详情请参考Guide哥的视频以及他GitHub上所用到的资源，资源使用链接:https://github.com/Snailclimb/docsify-demo
 ### 1.2 将项目上传至GitHub
 #### 1.2.1 终端上传该项目至GitHub
