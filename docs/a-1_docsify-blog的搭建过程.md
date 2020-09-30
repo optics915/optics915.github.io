@@ -170,6 +170,7 @@ Everything up-to-date
 root:docsify-blog ZouYue$ 
 
 ```
+
 或者这个提交成功
 ```
 root:docsify-blog ZouYue$ git init
@@ -178,10 +179,10 @@ root:docsify-blog ZouYue$ git add .
 root:docsify-blog ZouYue$ git commit -m 'fifth commit'
 位于分支 master
 无文件要提交，干净的工作区
-root:docsify-blog ZouYue$ git remote add origin https://github.com/optics915/docsify-blog.git
+root:docsify-blog ZouYue$ git remote add origin https://github.com/optics915/optics915.github.io.git
 fatal: 远程 origin 已经存在。
 root:docsify-blog ZouYue$ git remote rm origin
-root:docsify-blog ZouYue$ git remote add origin https://github.com/optics915/docsify-blog.git
+root:docsify-blog ZouYue$ git remote add origin https://github.com/optics915/optics915.github.io.git
 root:docsify-blog ZouYue$ git push -u origin master
 Username for 'https://github.com': optics915
 Password for 'https://optics915@github.com': 
@@ -254,11 +255,14 @@ root:docsify-blog ZouYue$
 提示：更新被拒绝，因为远程仓库包含您本地尚不存在的提交。这通常是因为另外
 提示：一个仓库已向该引用进行了推送。再次推送前，您可能需要先整合远
 ```
+
+3、如果电脑连接的是热点数据，那么该网站将无法访问，这个很关键，之前在这儿卡了很久，以至于重新删除仓库再新建都没用
+
 解决:
 
 1、显示origin 已经存在，那我们只需要将origin删除，即命令`git remote rm origin`参考:https://www.cnblogs.com/LQ970811/p/12174743.html;
 
 2、显示更新被拒绝，说明无法提交，按照后面这个链接的说法，我们进行强制提交，`origin +master`,完整命令：`git push -u origin +master`,参考:https://blog.csdn.net/qq_23100787/article/details/77529762?utm_medium=distribute.pc_relevant_t0.none-task-blog-BlogCommendFromMachineLearnPai2-1.compare&depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-BlogCommendFromMachineLearnPai2-1.compare
 
-
+3、电脑连接WiFi即可
 
