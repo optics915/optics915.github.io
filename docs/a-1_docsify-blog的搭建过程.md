@@ -68,6 +68,7 @@ Listening at http://localhost:3000
 ![](https://s1.ax1x.com/2020/09/21/wb5yfU.png)
 ![](https://s1.ax1x.com/2020/09/21/wb5BT0.png)
 ![](https://s1.ax1x.com/2020/09/21/wb526J.png)
+参考：[mac设置vscode命令行启动](https://blog.csdn.net/flitrue/article/details/90906578)
 
 #### 1.1.7 博客内容填充以及侧边栏、搜索栏
 这里详情请参考Guide哥的视频以及他GitHub上所用到的资源，资源使用链接:https://github.com/Snailclimb/docsify-demo

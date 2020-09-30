@@ -6,6 +6,8 @@
   * [a-3_解决服务器在国外访问缓慢问题](./docs/a-3_解决服务器在国外访问缓慢问题.md)
   * [a-4_将pycharm里面的项目上传至GitHub或者Gitee](./docs/a-4_将pycharm里面的项目上传至GitHub或者Gitee.md)
   * [a-5_IntelliJ全家桶破解办法](./docs/a-5_IntelliJ全家桶破解办法.md)
+  * [a-6_服务器数据库无法访问](./docs/a-6_服务器数据库无法访问.md)
+  
 <!-- [新式复现](./docs/a-1新式复现.md) -->
   
 * Java
