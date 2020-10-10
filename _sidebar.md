@@ -7,6 +7,7 @@
   * [a-4_将pycharm里面的项目上传至GitHub或者Gitee](./docs/a-4_将pycharm里面的项目上传至GitHub或者Gitee.md)
   * [a-5_IntelliJ全家桶破解办法](./docs/a-5_IntelliJ全家桶破解办法.md)
   * [a-6_服务器数据库无法访问](./docs/a-6_服务器数据库无法访问.md)
+  * [a-7_PyCharm更新文件至GitHub或gitee](./docs/a-7_PyCharm更新文件至GitHub或gitee.md)
   
 <!-- [新式复现](./docs/a-1新式复现.md) -->
   
